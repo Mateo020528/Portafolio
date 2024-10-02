@@ -3,9 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
 import LinkedinIco from '../components/Icons/Likedin.astro';
 import GithubIco  from '../components/Icons/Github.astro';
+import MailIco from '../components/Icons/Mail.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Portafolio Desarrollo web Mateo vélez Toro. ">
 	<main>
 		<section class="w-full lg:w-[740px] mx-auto py-44">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">Hola, Soy Mateo Vélez 
@@ -15,16 +16,25 @@ import GithubIco  from '../components/Icons/Github.astro';
 					<Badge>Disponible para trabajar</Badge>
 				</a>
 			</h1>
-			<h2 class="text-xl opacity-65">Soy una persona que disfruta de lo que hace, solucionando problemas a traves del código, a lo largo de mi formación he trabajado en varios proyectos, muchos de esos trabajos han sido colaborando con mis compañeros y muchos otros fueron hechos por mi mismo esto me ha permitido desarrollar habilidades en los diversos lenguajes que e usado tales como [C# - JavaScript - Html - Css - .Net]</h2>
-			<ul class="flex flex-row gap-x-4 items-center">
+			<h2 class="text-xl opacity-65">Soy una persona que disfruta de lo que hace, solucionando problemas a traves del código, a lo largo de mi formación he trabajado en varios proyectos, muchos de esos trabajos han sido colaborando con mis compañeros y muchos otros fueron hechos por mi mismo esto me ha permitido desarrollar habilidades en los diversos lenguajes que e usado tales como [C# - .Net - Html - Css -JavaScript  ] 
+				en los siguientes enlaces conoceras más sobre mi.</h2>
+			<ul class="flex flex-row gap-x-8 items-center justify-center mt-5">
 				<li>
-					<a href="https://www.linkedin.com/in/mateo-velez-toro" target="_blank">
-						<LinkedinIco class= "w-6 h-6"/>
+					<a href="https://www.linkedin.com/in/mateo-velez-toro" target="_blank" class="pill hover:scale- hover:bg-white/10">
+						<LinkedinIco/>
+						Linkedin
 					</a>
 				</li>
 				<li>
-					<a href="https://github.com/Mateo020528" target="_blank">
+					<a href="https://github.com/Mateo020528" target="_blank" class="pill hover:scale-110 hover:bg-white/10">
 						<GithubIco/>
+						GitHub
+					</a>
+				</li>
+				<li>
+					<a href="https://mail.google.com/mail/u/0/#inbox"  target="_blank" class="pill hover:scale- hover:bg-white/10">
+						<MailIco/>
+						mateo.velez.censa@gmail.com
 					</a>
 				</li>
 				
