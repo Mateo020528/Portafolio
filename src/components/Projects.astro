@@ -1,0 +1,31 @@
+---
+import { imageConfig } from 'astro:assets';
+import ProjectItem from './ProjectItem.astro';
+const PROJECT = [
+    {
+        Title: 'NodeTech.',
+        Description: 'Node tech nace por la necesidad que encontramos en la actualidad para los diferentes fuentes de información relacionadas al mundo tecnologico, en donde la industria exige en la mayor brevedad posible el conocimiento y la aplicabilidad de el mismo para el sistema de negocios.',
+        Date: 'Febrero 2024',
+        technologies: 'Html - Css - JavaScript - JsonServer',
+        Link: 'node-tech.vercel.app',
+        img: 'https://github.com/Mateo020528/NodeTech/blob/main/assets/landing-1.png?raw=true '
+    },
+    {
+        Title: 'Crud de video Juegos.',
+        Description: 'Introducción a el lenguaje de C# usando su framework de .Net con el patron de diseño Modelo - Vista - Controlador',
+        Date: 'Julio 2024',
+        technologies: 'Html - Css - Bootstrap - C# - .Net',
+        Link: '',
+        img: ''
+    }
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        PROJECT.map(project => (
+            <li class="mb-10 ms-4">
+                <ProjectItem {...project }/>
+            </li>
+        ))
+    }
+</ol>

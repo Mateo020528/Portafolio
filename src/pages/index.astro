@@ -4,6 +4,7 @@ import Badge from '../components/Badge.astro';
 import LinkedinIco from '../components/Icons/Likedin.astro';
 import GithubIco  from '../components/Icons/Github.astro';
 import MailIco from '../components/Icons/Mail.astro';
+import Experience from '../components/Projects.astro'
 ---
 
 <Layout title="Portafolio Desarrollo web Mateo vélez Toro. ">
@@ -18,9 +19,9 @@ import MailIco from '../components/Icons/Mail.astro';
 			</h1>
 			<h2 class="text-xl opacity-65">Soy una persona que disfruta de lo que hace, solucionando problemas a traves del código, a lo largo de mi formación he trabajado en varios proyectos, muchos de esos trabajos han sido colaborando con mis compañeros y muchos otros fueron hechos por mi mismo esto me ha permitido desarrollar habilidades en los diversos lenguajes que e usado tales como [C# - .Net - Html - Css -JavaScript  ] 
 				en los siguientes enlaces conoceras más sobre mi.</h2>
-			<ul class="flex flex-row gap-x-8 items-center justify-center mt-5">
+			<ul class="flex flex-row gap-x-8 items-center  mt-5 mb-12">
 				<li>
-					<a href="https://www.linkedin.com/in/mateo-velez-toro" target="_blank" class="pill hover:scale- hover:bg-white/10">
+					<a href="https://www.linkedin.com/in/mateo-velez-toro" target="_blank" class="pill hover:scale-110 hover:bg-white/10">
 						<LinkedinIco/>
 						Linkedin
 					</a>
@@ -32,13 +33,14 @@ import MailIco from '../components/Icons/Mail.astro';
 					</a>
 				</li>
 				<li>
-					<a href="https://mail.google.com/mail/u/0/#inbox"  target="_blank" class="pill hover:scale- hover:bg-white/10">
+					<a href="https://mail.google.com/mail/u/0/#inbox"  target="_blank" class="pill hover:scale-110 hover:bg-white/10">
 						<MailIco/>
 						mateo.velez.censa@gmail.com
 					</a>
 				</li>
-				
-			</ul>			
+			</ul>	
+			<p class="font-semibold text-3xl mb-4">Projects</p>
+			<Experience class=" flex flex-row justify-center items-center mt-12">
 		</section>
 	</main>
 </Layout>
